@@ -28,3 +28,72 @@
 header a {
    /* color: #fff;/*
 }
+
+/*--------------header---------*/
+
+header {
+    padding: 1.5rem 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    margin-right: auto;
+}
+
+li {
+    list-style: none;
+    display: inline;
+    margin-left: 1rem;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+/*main body*/
+
+/*created the border picture for box in main head*/
+.image-placeholder {
+    height: 230px;
+    width: 100%;
+    background-color: #E5E7EB;
+    align-items: center;
+    justify-content: center;
+    color: #1F2937;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.75);
+}
+
+.boxtwo {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    height: 100%;
+    gap: 2.5rem;
+}
+
+.boxtwo div {
+    grid-row: span 3;
+    grid-column: span 2;
+}
+
+
+.boxtwo .boxleft  {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.boxtwo .boxright  {
+    flex-direction: column;
+    justify-content: center;
+}
